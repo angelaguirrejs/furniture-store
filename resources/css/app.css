@@ -1,0 +1,286 @@
+html {
+    /*Avoid to modify the size of an element when i want to add padding or margin*/
+    box-sizing: border-box;
+    /* Rem = 10px */
+    font-size: 62.5%;
+}
+
+
+/*It's for box sizing*/
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Opens Sans', sans-serif;
+    font-size: 1.6;
+    /* Line spacing */
+    line-height: 2;
+}
+
+
+/* Globals */
+
+h1,
+h2,
+h3 {
+    margin: 0 0 5rem 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Utilities */
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    background-color: #8cbc00;
+    display: block;
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .5rem;
+    transition: background-color .3s ease;
+}
+
+.btn:hover {
+    background-color: #769c02;
+}
+
+
+/* Header and navigations */
+
+.site-name {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.site-name span {
+    color: #037bc0;
+}
+
+.container-navigation {
+    border-color: #e1e1e1;
+    border-top-style: solid;
+    border-width: .1rem;
+}
+
+.main-navigation {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+
+.active-link {
+    color: red;
+}
+
+.hero {
+    background-image: url('../images/principal.jpg');
+    height: 55rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* Categories */
+
+.categories {
+    padding-top: 5rem;
+}
+
+.category img:hover {
+    transform: scale(1.1);
+    transition: transform .3s ease-in;
+}
+
+.category a {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    transition: background-color .3s ease;
+}
+
+.category a:hover {
+    background-color: #037bc0;
+    color: #FFF;
+}
+
+.categories-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+
+/* About us */
+
+.about-us {
+    margin-top: 5rem;
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url('../images/nosotros.jpg');
+    padding: 10rem 0rem;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+    background-position: left center;
+}
+
+.about-us-grid {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text-about-us {
+    flex-basis: 50%;
+    padding-left: 5rem;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+
+/* Products */
+
+.main-content {
+    margin-top: 5rem;
+}
+
+.product-listing {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.product {
+    background-color: #037bc0;
+}
+
+.product-info {
+    font-size: 1.6rem;
+}
+
+.product-info h3 {
+    margin: 0;
+}
+
+.product-info p {
+    margin: 0 0 .5rem 0;
+}
+
+.product-info {
+    text-align: center;
+    color: #ffff;
+    padding: 4rem;
+}
+
+.product-info .price {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.product:nth-child(1) {
+    grid-column: 1 / 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr
+}
+
+.product:nth-child(1) img {
+    height: 43rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product:nth-child(2) {
+    grid-column: 1 / 4;
+}
+
+.product:nth-child(3) {
+    grid-column: 4 / 7;
+}
+
+.product:nth-child(2) img,
+.product:nth-child(3) img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product:nth-child(4) {
+    grid-column: 1 / 3;
+}
+
+.product:nth-child(5) {
+    grid-column: 3 / 5;
+}
+
+.product:nth-child(6) {
+    grid-column: 5 / 7;
+}
+
+.site-footer>div {
+    margin-top: 10rem;
+    border-top: 1px solid #e1e1e1;
+}
+
+.grid-footer {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-footer h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nav-footer {
+    font-size: 1.6rem;
+}
+
+.nav-footer a {
+    display: block;
+}
+
+.credits-footer p {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
